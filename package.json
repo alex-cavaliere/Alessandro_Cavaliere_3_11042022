@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "sass": "^1.50.0"
+  },
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "menu restaurant",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-cavaliere/Oh_My_Food.git"
+  },
+  "keywords": [
+    "oh",
+    "my",
+    "food",
+    "restaurant",
+    "menu",
+    "manger",
+    "loisir"
+  ],
+  "author": "Alessandro Cavaliere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-cavaliere/Oh_My_Food/issues"
+  },
+  "homepage": "https://github.com/alex-cavaliere/Oh_My_Food#readme"
+}
