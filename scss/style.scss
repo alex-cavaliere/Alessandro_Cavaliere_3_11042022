@@ -7,21 +7,51 @@
     src: url('../shrikhand/Shrikhand-Regular.otf') format('opentype');
 }
 
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color:#99E2D0;
+
 @media screen and(max-width: 700px){
     
     body{
         font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
     }
     .title{
         font-family: 'Shrikhand', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    #top{
+    #top, header{
         text-align: center;
+        margin-top: 2%;
+    }
+    #top{
+        background-color: #f6f5f5;
     }
     img {
         width: 200px;
     }
-    #list, #resto, article, footer{
+    #logo_caption{
+        margin-top: 2%;
+        background-color: #e9e5e5;
+        padding: 2px;
+        box-shadow: inset 0px 3px 6px 0px #cfcccc;
+        margin-bottom: 8%;
+    }
+    .intro{
+        width: 65%;
+        margin: auto;
+        & p{
+            color: #737272;
+            font-weight: 100;
+        }
+    }
+    button{
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 6%;
+        margin-bottom: 20%;
+    }
+    #functions, #resto, footer{
         margin-top: 20%;
     }
 }
