@@ -10,106 +10,165 @@ body {
   font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
   font-size: larger;
+  font-weight: 400;
 }
 
-@media screen and (max-width: 700px) {
-  .title {
-    font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
+.title {
+  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
 
-  #top, header {
-    text-align: center;
-    margin-top: 2%;
-  }
+#top, header {
+  text-align: center;
+  margin-top: 2%;
+}
 
-  #top {
-    background-color: #f6f5f5;
-  }
+#top {
+  background-color: #f6f5f5;
+}
 
-  img {
-    width: 200px;
-  }
+img {
+  width: 200px;
+}
 
-  #logo_caption {
-    margin-top: 2%;
-    background-color: #e9e5e5;
-    padding: 2px;
-    box-shadow: inset 0px 3px 6px 0px #cfcccc;
-    margin-bottom: 8%;
-  }
+#logo_caption {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e5e5;
+  padding: 2px;
+  box-shadow: inset 0px 3px 6px 0px #cfcccc;
+  margin-bottom: 8%;
+  margin-top: 2%;
+}
+#logo_caption .location_dot {
+  position: relative;
+  right: 2rem;
+  top: 1.1rem;
+}
 
-  .intro {
-    width: 80%;
-    margin: auto;
-  }
-  .intro p {
-    color: #737272;
-  }
+.intro {
+  width: 80%;
+  margin: auto;
+}
+.intro p {
+  color: #737272;
+}
 
-  button {
-    padding: 17px 30px;
-    border-radius: 40px;
-    margin-top: 6%;
-    color: #ffffff;
-    background: linear-gradient(#FF79DA, #9356DC);
-    margin-bottom: 20%;
-    font-size: large;
-    text-shadow: #737272;
-    box-shadow: #bdbdbd 2px 2px 4px 1px;
-    transition: transform 250ms;
-  }
-  button:hover {
-    transform: scale(1.05);
-  }
+button {
+  padding: 17px 30px;
+  border-radius: 40px;
+  margin-top: 6%;
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin-bottom: 20%;
+  font-size: large;
+  text-shadow: #737272;
+  border: none;
+  box-shadow: #bdbdbd 2px 2px 4px 1px;
+  transition: transform 250ms;
+}
+button:hover {
+  transform: scale(1.05);
+}
 
-  #functions, #resto, footer {
-    margin-top: 20%;
-    margin-left: 5%;
-  }
+#functions {
+  margin-top: 10%;
+}
+#functions h2 {
+  margin-left: 5%;
+}
 
-  .list {
-    display: flex;
-    flex-direction: column;
-  }
-  .list .functions_list {
-    background-color: #f6f5f5;
-    box-shadow: #bdbdbd 2px 2px 4px 1px;
-    padding: 25px;
-    width: 80%;
-    margin-bottom: 5%;
-    border-radius: 20px;
-  }
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list .functions_list {
+  align-items: center;
+  list-style: none;
+  background-color: #f6f5f5;
+  box-shadow: #bdbdbd 2px 2px 4px 1px;
+  padding: 5px 25px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+.list .functions_list .list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  right: 13%;
+}
+.list .functions_list .list_item .counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 20px;
+  background-color: #9356DC;
+  color: #f6f5f5;
+  font-size: medium;
+}
 
-  #resto {
-    background-color: #f6f5f5;
-    padding-top: 10%;
-    margin-top: 8%;
-  }
-  #resto #cards {
-    display: flex;
-    flex-direction: column;
-  }
-  #resto #cards figure {
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: #bdbdbd 2px 2px 4px 1px;
-  }
-  #resto #cards figure figcaption {
-    margin-left: 3%;
-    position: relative;
-    top: -10px;
-  }
-  #resto #cards figure figcaption p {
-    margin-top: -20px;
-    margin-bottom: 5px;
-  }
-  #resto #cards figure img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    object-position: 37% 63%;
-    border-radius: 20px 20px 0px 0px;
-  }
+#resto {
+  background-color: #f6f5f5;
+  padding-top: 10%;
+  margin-top: 8%;
+}
+#resto h2 {
+  margin-left: 7%;
+  margin-bottom: 0;
+}
+#resto #cards {
+  display: flex;
+  flex-direction: column;
+}
+#resto #cards figure {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: #bdbdbd 2px 2px 4px 1px;
+}
+#resto #cards figure .alert {
+  width: 20%;
+  height: 1.6rem;
+  border-radius: 4px;
+  position: absolute;
+  left: 68%;
+  margin-top: 3%;
+  text-align: center;
+  padding-top: 2%;
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 1rem;
+}
+#resto #cards figure figcaption {
+  margin-left: 3%;
+  position: relative;
+  top: -10px;
+}
+#resto #cards figure figcaption p {
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+#resto #cards figure img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: 37% 63%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 7%;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+footer h3 {
+  margin-left: 5%;
+  padding-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
