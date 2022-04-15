@@ -206,4 +206,42 @@ footer h3 {
   padding-top: 5%;
 }
 
+@media screen and (min-width: 768px) {
+  #functions {
+    margin-top: 0;
+  }
+  #functions ol {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #resto {
+    margin-top: 0;
+    padding-top: 3%;
+  }
+  #resto #cards {
+    flex-direction: row;
+  }
+  #resto #cards figure {
+    width: 70%;
+  }
+  #resto #cards figure .alert {
+    left: 12%;
+    margin-top: 1%;
+    width: 8%;
+    height: 4%;
+    padding-top: 1%;
+  }
+
+  #top {
+    background-image: url("/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+    opacity: 0.8;
+  }
+  #top p {
+    color: black;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

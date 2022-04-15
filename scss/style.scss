@@ -32,6 +32,7 @@ a{
 }
 #top{
     background-color: #f6f5f5;
+
 }
 img {
     width: 200px;
@@ -156,6 +157,7 @@ button{
                     right: 7%;   
                     margin-top: 2%;
                     font-size: x-large;
+
                 }
                 & p{
                     margin-top: -20px;
@@ -199,5 +201,41 @@ footer{
     & h3{
         margin-left: 5%;
         padding-top: 5%;
+    }
+}
+
+@media screen and(min-width:768px) {
+    #functions{
+        margin-top: 0;
+        & ol{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+    #resto{
+        margin-top: 0;
+        padding-top: 3%;
+        & #cards{
+            flex-direction: row;
+            & figure{
+                width: 70%;
+                & .alert{
+                    left: 12%;
+                    margin-top: 1%;
+                    width: 8%;
+                    height: 4%;
+                    padding-top: 1%;
+                }
+            }
+        }
+    }
+    #top{
+        background-image: url("/Maquettes\ Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size:cover;
+        opacity: 0.8;
+        & p{
+            color: darken(#737272, 50%);
+        }
     }
 }
