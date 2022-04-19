@@ -22,6 +22,7 @@ a{
 }
 #top{
     background-color: #f6f5f5;
+    max-height: 500px;
 
 }
 img {
@@ -226,12 +227,7 @@ footer{
                 max-width: 290px;
                 width: 100%;
                 & .alert{
-                    left: 12%;
-                    margin-top: 1%;
-                    width: 8%;
-                    height: 4%;
-                    padding-bottom: 1%;
-                    padding-top: 1%;
+                    display: none;
                 }
             }
         }
@@ -246,5 +242,8 @@ footer{
                 color: white;
             }
         }
+    }
+    footer{
+        padding-bottom: 2rem;
     }
 }
