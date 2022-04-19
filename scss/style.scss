@@ -1,15 +1,5 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('../roboto/Roboto-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Shrikhand';
-    src: url('../shrikhand/Shrikhand-Regular.otf') format('opentype');
-}
-
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color:#99E2D0;
+@import "./utils/variables";
+@import "./base/font";
 
 body{
     font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -53,8 +43,6 @@ img {
     }
 }
 .intro{
-    width: 80%;
-    margin: auto;
     & p{
         color: #737272;
     }
@@ -85,6 +73,7 @@ button{
 .list{
     display: flex;
     flex-direction: column;
+    align-items: center;
     & .functions_list{
         align-items: center;
         list-style: none;
@@ -95,6 +84,12 @@ button{
         max-width: 300px;
         margin-bottom: 5%;
         border-radius: 20px;
+        &:hover{
+            transition: opacity 250ms;
+            transition: box-shadow 250ms;
+            opacity: 0.9;
+            box-shadow: #353535 2px 2px 10px;
+        }
         & .list_item{
             display: flex;
             align-items: center;
@@ -135,6 +130,12 @@ button{
             background-color: white;
             border-radius: 20px;
             box-shadow: #bdbdbd 2px 2px 4px 1px;
+            &:hover{
+                transition: opacity 250ms;
+                transition: box-shadow 250ms;
+                opacity: 0.9;
+                box-shadow: #353535 2px 2px 10px;
+            }
             & .alert{
                 width: 20%;
                 height: 1.6rem;
@@ -218,24 +219,32 @@ footer{
         padding-top: 3%;
         & #cards{
             flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
             & figure{
-                width: 70%;
+                min-width: 280px;
+                max-width: 290px;
+                width: 100%;
                 & .alert{
                     left: 12%;
                     margin-top: 1%;
                     width: 8%;
                     height: 4%;
+                    padding-bottom: 1%;
                     padding-top: 1%;
                 }
             }
         }
     }
     #top{
-        background-image: url("/Maquettes\ Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-        background-size:cover;
-        opacity: 0.8;
-        & p{
-            color: darken(#737272, 50%);
+        & article{
+            color: lighten(#737272, 75%);
+            background-color: #353535;
+            opacity: 0.8;
+            width: 100%;
+            & p{
+                color: white;
+            }
         }
     }
 }
