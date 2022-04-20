@@ -1,0 +1,30 @@
+@mixin footer{
+    footer{
+        background-color: #353535;
+        color: white;
+        margin-top: -25px;
+        padding-bottom: 7%;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        & ul{
+            margin-left: -20px;
+        }
+        & .footer_list{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2%;
+            max-height: 26px;
+            list-style: none;
+            & span{
+                margin-right: 3%;
+                font-size: medium;
+            }
+            & a{
+                color: white;
+            }
+        }
+        & h3{
+            margin-left: 5%;
+            padding-top: 5%;
+        }
+    }
+}

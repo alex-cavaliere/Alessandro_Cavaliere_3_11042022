@@ -1,8 +1,22 @@
 @font-face {
     font-family: 'Roboto';
+    src: url('../roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-R';
     src: url('../roboto/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Shrikhand';
     src: url('../shrikhand/Shrikhand-Regular.otf') format('opentype');
+}
+body{
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    font-size: larger;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: white;
 }

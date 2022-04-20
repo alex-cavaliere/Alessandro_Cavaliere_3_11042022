@@ -1,5 +1,9 @@
 @font-face {
   font-family: "Roboto";
+  src: url("../roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-R";
   src: url("../roboto/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -16,44 +20,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-}
-
-.title {
-  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 400;
-}
-
-#top, header {
-  text-align: center;
-  margin-top: 2%;
-}
-
-#top {
-  background-color: #f6f5f5;
-  max-height: 500px;
-}
-
-img {
-  width: 200px;
-}
-
-#logo_caption {
-  display: flex;
-  justify-content: center;
-  background-color: #e9e5e5;
-  padding: 2px;
-  box-shadow: inset 0px 3px 6px 0px #cfcccc;
-  margin-bottom: 8%;
-  margin-top: 2%;
-}
-#logo_caption .location_dot {
-  position: relative;
-  right: 2rem;
-  top: 1.1rem;
-}
-
-.intro p {
-  color: #737272;
 }
 
 button {
@@ -74,6 +40,47 @@ button:hover {
   box-shadow: #353535 2px 2px 10px;
 }
 
+.title {
+  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+#top, header {
+  text-align: center;
+  margin-top: 2%;
+}
+#top img, header img {
+  width: 250px;
+}
+
+#top {
+  background-color: #f6f5f5;
+  max-height: 500px;
+}
+
+#logo_caption {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e5e5;
+  padding: 2px;
+  box-shadow: inset 0px 3px 6px 0px #cfcccc;
+  margin-bottom: 8%;
+  margin-top: 2%;
+}
+#logo_caption .location_dot {
+  position: relative;
+  right: 2rem;
+  top: 1.1rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+}
+.intro p {
+  color: #737272;
+  font-family: "Roboto-R";
+}
+
 #functions {
   margin-top: 10%;
 }
@@ -84,7 +91,6 @@ button:hover {
 .list {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .list .functions_list {
   align-items: center;
@@ -114,6 +120,9 @@ button:hover {
 .list .functions_list .list_item span {
   color: #737272;
 }
+.list .functions_list .list_item span:hover {
+  color: #9356DC;
+}
 .list .functions_list .list_item .counter {
   display: flex;
   align-items: center;
@@ -142,6 +151,9 @@ button:hover {
 }
 #resto #cards figure {
   background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
   box-shadow: #bdbdbd 2px 2px 4px 1px;
 }
@@ -175,7 +187,11 @@ button:hover {
   margin-top: 2%;
   font-size: x-large;
 }
+#resto #cards figure figcaption .heart i:hover {
+  color: #9356DC;
+}
 #resto #cards figure figcaption p {
+  font-family: "Roboto-R";
   margin-top: -20px;
   margin-bottom: 5px;
 }
