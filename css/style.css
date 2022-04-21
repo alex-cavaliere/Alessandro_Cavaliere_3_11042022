@@ -104,8 +104,7 @@ button:hover {
   border-radius: 20px;
 }
 .list .functions_list:hover {
-  transition: opacity 250ms;
-  transition: box-shadow 250ms;
+  transition: all 250ms;
   opacity: 0.9;
   box-shadow: #353535 2px 2px 10px;
 }
@@ -117,10 +116,7 @@ button:hover {
   right: 13%;
   cursor: pointer;
 }
-.list .functions_list .list_item span {
-  color: #737272;
-}
-.list .functions_list .list_item span:hover {
+.list .functions_list .list_item:hover {
   color: #9356DC;
 }
 .list .functions_list .list_item .counter {
@@ -133,6 +129,9 @@ button:hover {
   background-color: #9356DC;
   color: #f6f5f5;
   font-size: medium;
+}
+.list .functions_list .list_item span {
+  opacity: 0.5;
 }
 
 #resto {
