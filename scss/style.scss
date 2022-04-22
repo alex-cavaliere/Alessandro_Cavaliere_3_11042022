@@ -1,22 +1,17 @@
 @import "./utils/variables";
 @import "./base/font";
 @import "./components/button";
+@import "./layout/footer";
 
 .title{
     font-family: 'Shrikhand', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
 }
-#top, header{
-    text-align: center;
-    margin-top: 2%;
-    & img{
-        width: 250px;
-    }
-}
-
 #top{
     background-color: $section-color;
     max-height: 500px;
+    text-align: center;
+    margin-top: 2%;
 }
 #logo_caption{
     display: flex;
@@ -35,9 +30,11 @@
 }
 .intro{
     font-size: 1.5rem;
+    padding-bottom: 5rem;
     & p{
         color: #737272;
         font-family: 'Roboto-R';
+        margin-bottom: 2rem;
     }
 }
 #functions{
@@ -159,35 +156,6 @@
         }
     }
 }
-footer{
-    background-color: $footer-color;
-    color: white;
-    margin-top: -25px;
-    padding-bottom: 7%;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    & ul{
-        margin-left: -20px;
-    }
-    & .footer_list{
-        display: flex;
-        align-items: center;
-        margin-bottom: 2%;
-        max-height: 26px;
-        list-style: none;
-        & span{
-            margin-right: 3%;
-            font-size: medium;
-        }
-        & a{
-            color: white;
-        }
-    }
-    & h3{
-        margin-left: 5%;
-        padding-top: 5%;
-    }
-}
-
 @media screen and(min-width:768px) {
     #functions{
         margin-top: 0;
