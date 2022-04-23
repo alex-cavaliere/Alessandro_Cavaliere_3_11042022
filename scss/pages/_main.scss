@@ -1,3 +1,8 @@
+@import "../utils/variables";
+@import "../base/font";
+@import "../components/button";
+@import "../layout/footer";
+
 #top{
     background-color: $section-color;
     max-height: 500px;
