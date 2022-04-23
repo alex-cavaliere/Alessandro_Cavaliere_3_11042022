@@ -1,0 +1,74 @@
+@import "../utils/variables";
+@import "../base/font";
+@import "../components/button";
+@import "../layout/footer";
+
+img{
+    width: 100%;
+}
+#logo_menu{
+    & figure{
+        margin: 0.5rem;
+    }
+}
+
+#header_menu{
+    bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    & .heart{
+        font-size: x-large;
+    }
+}
+#menu{
+    position: relative;
+    top: -2.6rem;
+    background-color: $section-color;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 3rem;
+    margin-bottom: -3.7rem;
+    & .btn{
+        width: 50%;
+        }
+    & h2{
+        margin-left: 1rem;
+        opacity: 0.7;
+        font-size: large;
+        font-weight: lighter;
+        font-family: 'Roboto-R';
+        border-bottom: 4px solid $tertiary-color;
+        width: 3rem;
+        padding-bottom: 0.6rem;
+    }
+    & ol{
+        list-style-type: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -2rem;
+        & li{
+            width: 100%;
+            padding: 0px 30px 0px 10px;
+            background-color: white;
+            & h3{
+                margin: 1rem 0 -0.8rem;
+                font-weight: 400;
+            }
+            & .caption{
+                display: flex;    
+                justify-content: space-between;
+                & p:first-child{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-family: 'Roboto-S';
+                }
+            }
+        }
+    }
+}
