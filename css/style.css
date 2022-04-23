@@ -58,6 +58,11 @@ header img {
   width: 45%;
 }
 
+.title {
+  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -85,11 +90,6 @@ footer .footer_list a {
 footer h3 {
   margin-left: 5%;
   padding-top: 5%;
-}
-
-.title {
-  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 400;
 }
 
 #top {
@@ -348,6 +348,11 @@ header {
 }
 header img {
   width: 45%;
+}
+
+.title {
+  font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
 }
 
 footer {
