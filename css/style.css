@@ -66,7 +66,7 @@ header img {
 footer {
   background-color: #353535;
   color: white;
-  margin-top: -25px;
+  margin-top: -30px;
   padding-bottom: 7%;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
@@ -142,7 +142,7 @@ footer h3 {
   box-shadow: #bdbdbd 2px 2px 4px 1px;
   padding: 5px 25px;
   width: 80%;
-  max-width: 300px;
+  max-width: 320px;
   margin-bottom: 5%;
   border-radius: 20px;
 }
@@ -223,14 +223,17 @@ footer h3 {
   position: relative;
   top: -10px;
 }
-#resto #cards figure figcaption .heart {
+#resto #cards figure figcaption .heart_full {
+  visibility: hidden;
+}
+#resto #cards figure figcaption .heart, #resto #cards figure figcaption .heart_full {
   position: absolute;
   right: 7%;
   margin-top: 2%;
   font-size: x-large;
 }
-#resto #cards figure figcaption .heart i:hover {
-  color: #9356DC;
+#resto #cards figure figcaption .heart i, #resto #cards figure figcaption .heart_full i {
+  width: 2rem;
 }
 #resto #cards figure figcaption p {
   font-family: "Roboto-S";
@@ -358,7 +361,7 @@ header img {
 footer {
   background-color: #353535;
   color: white;
-  margin-top: -25px;
+  margin-top: -30px;
   padding-bottom: 7%;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
@@ -386,10 +389,21 @@ footer h3 {
 
 img {
   width: 100%;
+  max-height: 300px;
+}
+
+.arrow {
+  position: absolute;
+  left: 2rem;
+  font-size: x-large;
 }
 
 #logo_menu figure {
   margin: 0.5rem;
+}
+
+body {
+  background-color: #f6f5f5;
 }
 
 #header_menu {
@@ -407,7 +421,7 @@ img {
 
 #menu {
   position: relative;
-  top: -2.6rem;
+  top: -6rem;
   background-color: #f6f5f5;
   width: 100%;
   border-radius: 40px 40px 0 0;
@@ -416,6 +430,7 @@ img {
 }
 #menu .btn {
   width: 50%;
+  margin-bottom: -3rem;
 }
 #menu h2 {
   margin-left: 1rem;
