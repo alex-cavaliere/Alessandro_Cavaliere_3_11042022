@@ -93,6 +93,10 @@ footer h3 {
   padding-top: 5%;
 }
 
+a {
+  text-decoration: none;
+}
+
 #top {
   background-color: #fbf8f8;
   max-height: 500px;
@@ -383,6 +387,10 @@ footer h3 {
   padding-top: 5%;
 }
 
+header {
+  position: relative;
+}
+
 img {
   width: 100%;
   max-height: 300px;
@@ -447,30 +455,67 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: -2rem;
-  transition: ease-in-out 600ms;
 }
 #menu ol li {
   max-width: 400px;
   width: 87%;
-  padding: 0px 30px 0px 10px;
+  padding: 0px 0px 0px 10px;
   background-color: white;
 }
-#menu ol li h3 {
+#menu ol li .items {
+  width: auto;
+  overflow: hidden;
+}
+#menu ol li .items:hover > .caption > .anima > .check {
+  transform: translateX(0);
+  transition: transform 600ms, margin 600ms;
+  margin-left: 2.5rem;
+}
+#menu ol li .items h3 {
   margin: 1rem 0 -0.8rem;
   font-weight: 400;
+}
+#menu ol li .items .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  margin-top: -1.7rem;
+  background-color: #99E2D0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transform: translateX(105%);
+  transition: transform 400ms;
+}
+#menu ol li .items .check .check_icon {
+  font-size: larger;
+  padding: 2px 6px;
+  color: #99E2D0;
+  border-radius: 40px;
+  background-color: white;
+  transform: rotate(360deg);
+  transition: transform 600ms;
 }
 #menu ol li .caption {
   display: flex;
   justify-content: space-between;
+  text-align: justify;
 }
-#menu ol li .caption .prix {
-  padding-left: 2rem;
+#menu ol li .caption .anima {
+  display: flex;
+  justify-content: flex-end;
 }
-#menu ol li .caption p:first-child {
+#menu ol li .caption p:not(.prix) {
+  font-family: "Roboto-S";
+  width: 70%;
+}
+#menu ol li .caption p, #menu ol li .caption h3 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: "Roboto-S";
+}
+#menu ol li .caption .prix {
+  margin-right: -2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,9 @@
 @import "../components/button";
 @import "../layout/footer";
 
+header{
+    position: relative;
+}
 img{
     width: 100%;
     max-height: 300px;
@@ -63,27 +66,64 @@ img{
         flex-wrap: wrap;
         justify-content: space-between;
         margin-left: -2rem;
-        transition: ease-in-out 600ms;
         & li{
             max-width: 400px;
             width: 87%;
-            padding: 0px 30px 0px 10px;
+            padding: 0px 0px 0px 10px;
             background-color: white;
-            & h3{
-                margin: 1rem 0 -0.8rem;
-                font-weight: 400;
+            & .items{
+                width: auto;
+                overflow: hidden;
+                &:hover > .caption > .anima > .check{
+                    transform: translateX(0);
+                    transition: transform 600ms, margin 600ms;
+                    margin-left: 2.5rem;
+                }
+                & h3{
+                    margin: 1rem 0 -0.8rem;
+                    font-weight: 400;
+                }
+                & .check{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0px 20px 20px 0px;
+                    margin-top: -1.7rem;
+                    background-color: $tertiary-color;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    transform: translateX(105%);
+                    transition: transform 400ms;
+                    & .check_icon{
+                        font-size: larger;
+                        padding: 2px 6px;
+                        color: $tertiary-color;
+                        border-radius: 40px;
+                        background-color: white;
+                        transform: rotate(360deg);
+                        transition: transform 600ms;
+                    }
+                }
             }
             & .caption{
-                display: flex;    
+                display: flex;
                 justify-content: space-between;
-                & .prix{
-                    padding-left: 2rem;
+                text-align: justify;
+                & .anima{
+                    display: flex;
+                    justify-content: flex-end;
                 }
-                & p:first-child{
+                & p:not(.prix){
+                    font-family: 'Roboto-S';
+                    width: 70%;
+                }
+                & p, h3{
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    font-family: 'Roboto-S';
+                }
+                & .prix{
+                    margin-right: -2rem;
                 }
             }
         }
