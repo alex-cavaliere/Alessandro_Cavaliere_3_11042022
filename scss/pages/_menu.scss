@@ -4,20 +4,15 @@
 @import "../layout/header";
 @import "../layout/footer";
 
-@keyframes appear {
-    0%{
+@keyframes menu_scroll {
+    from{
         opacity: 0;
-        margin-top: -50px;
+        margin-top: -10px;
     }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1.0;
-        margin-top: 0;
+    to{
+        opacity: 1;
     }
 }
-
 img{
     width: 100%;
     max-height: 250px;
@@ -48,6 +43,9 @@ img{
     & .heart, .heart_full{
         margin-top: -3%;
     }
+    & .heart_full{
+        margin-right: 0.6px;
+    }
     .heart{
         margin-right: 0.5px;
     }
@@ -77,16 +75,26 @@ img{
     }
     & ol{
         list-style-type: none;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         & li{
             max-width: 400px;
-            width: 87%;
+            width: 100%;
             padding: 0px 0px 0px 10px;
             background-color: white;
-            margin-left: -2rem;
-            animation: appear 800ms;
+            margin-left: -1.5rem;
+            animation: menu_scroll 400ms linear;
+            animation-fill-mode:both;
+            animation-delay: 0.5s;
+            &:nth-child(1){
+
+            }
+            &:nth-child(2){
+
+            }
+            &:nth-child(3){
+                
+            }
             & .items{
                 width: auto;
                 overflow: hidden;
