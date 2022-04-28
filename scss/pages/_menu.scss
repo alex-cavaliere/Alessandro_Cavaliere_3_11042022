@@ -74,6 +74,7 @@ img{
         padding-bottom: 0.6rem;
     }
     & ol{
+        flex-direction: row;
         list-style-type: none;
         flex-wrap: wrap;
         justify-content: space-between;
