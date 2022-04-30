@@ -42,7 +42,7 @@ a:visited {
   color: #ffffff;
   background: linear-gradient(#FF79DA, #9356DC);
   font-size: medium;
-  text-shadow: #737272;
+  text-shadow: #737272 1px 2px 2px;
   border: none;
   box-shadow: #bdbdbd 2px 2px 4px;
   transition: all 200ms;
@@ -414,7 +414,7 @@ a:visited {
   color: #ffffff;
   background: linear-gradient(#FF79DA, #9356DC);
   font-size: medium;
-  text-shadow: #737272;
+  text-shadow: #737272 1px 2px 2px;
   border: none;
   box-shadow: #bdbdbd 2px 2px 4px;
   transition: all 200ms;
