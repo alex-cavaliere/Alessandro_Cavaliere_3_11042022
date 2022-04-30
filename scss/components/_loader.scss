@@ -54,7 +54,7 @@
         }
         &:nth-child(3){
             border-color: $tertiary-color;
-            animation: loader 700ms ease-in;
+            animation: loader 700ms linear;
         }
     }
 }

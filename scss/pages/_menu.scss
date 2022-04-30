@@ -88,13 +88,13 @@ img{
             animation-fill-mode:both;
             animation-delay: 0.5s;
             &:nth-child(1){
-                animation-delay: 100ms;
+                animation-delay: 300ms;
             }
             &:nth-child(2){
-                animation-delay: 250ms;
+                animation-delay: 600ms;
             }
             &:nth-child(3){
-                animation-delay: 400ms;
+                animation-delay: 800ms;
             }
             & .items{
                 width: auto;
