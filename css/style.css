@@ -217,7 +217,7 @@ footer h3 {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-right: 13%;
+  right: 13%;
   cursor: pointer;
 }
 .list .functions_list .list_item:hover > span {
@@ -253,19 +253,21 @@ footer h3 {
   flex-direction: column;
   padding-bottom: 3rem;
 }
-#resto #cards figure {
+#resto #cards a > figure {
   background-color: white;
   width: 90%;
   border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
   box-shadow: #bdbdbd 2px 2px 4px 1px;
 }
-#resto #cards figure:hover {
+#resto #cards a > figure:hover {
   transition: opacity 250ms;
   transition: box-shadow 250ms;
   opacity: 0.9;
   box-shadow: #353535 2px 2px 10px;
 }
-#resto #cards figure .alert {
+#resto #cards a > figure .alert {
   width: 20%;
   height: 1.6rem;
   border-radius: 4px;
@@ -278,17 +280,17 @@ footer h3 {
   color: #278870;
   font-size: 1rem;
 }
-#resto #cards figure figcaption {
+#resto #cards a > figure figcaption {
   margin-left: 3%;
   position: relative;
   top: -10px;
 }
-#resto #cards figure figcaption p {
+#resto #cards a > figure figcaption p {
   font-family: "Roboto-S";
   margin-top: -15px;
   margin-bottom: 5px;
 }
-#resto #cards figure img {
+#resto #cards a > figure img {
   height: 210px;
   object-fit: cover;
   object-position: 37% 63%;
@@ -327,7 +329,11 @@ footer h3 {
     margin-top: 1rem;
   }
 
+  #top #logo_caption {
+    margin-bottom: 5%;
+  }
   #top article {
+    opacity: 0.6;
     color: white;
     background-color: #353535;
     width: 100%;
@@ -356,15 +362,15 @@ footer h3 {
   }
   #resto #cards {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
-  #resto #cards figure {
+  #resto #cards a > figure {
     min-width: 280px;
     max-width: 290px;
     width: 100%;
   }
-  #resto #cards figure .alert {
+  #resto #cards a > figure .alert {
     display: none;
   }
 }

@@ -60,7 +60,7 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
-            margin-right: 13%;
+            right: 13%;
             cursor: pointer;
             &:hover > span{
                 opacity: 1;
@@ -95,10 +95,12 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 3rem;
-        & figure{
+        & a > figure{
             background-color: white;
             width: 90%;
             border-radius: 20px;
+            margin-right: auto;
+            margin-left: auto;
             box-shadow: #bdbdbd 2px 2px 4px 1px;
             &:hover{
                 transition: opacity 250ms;
@@ -167,7 +169,11 @@
         margin-top: 1rem;
     }
     #top{
+        & #logo_caption{
+            margin-bottom: 5%;
+        }
         & article{
+            opacity: 0.6;
             color: lighten(#737272, 75%);
             background-color: $footer-color;
             width: 100%;
@@ -193,9 +199,9 @@
         padding-top: 3%;
         & #cards{
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
-            & figure{
+            & a > figure{
                 min-width: 280px;
                 max-width: 290px;
                 width: 100%;
