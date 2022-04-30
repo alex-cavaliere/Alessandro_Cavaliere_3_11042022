@@ -256,8 +256,6 @@ footer h3 {
 #resto #cards figure {
   background-color: white;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 20px;
   box-shadow: #bdbdbd 2px 2px 4px 1px;
 }
