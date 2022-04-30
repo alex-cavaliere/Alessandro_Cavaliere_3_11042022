@@ -45,7 +45,6 @@
         border: 10px solid $primary-color;
         border-radius: 50%;
         &:nth-child(1){
-            border-color: $primary-color;
             background-color: $primary-color;
             animation: loader 1s linear infinite;
         }
@@ -55,7 +54,7 @@
         }
         &:nth-child(3){
             border-color: $tertiary-color;
-            animation: loader 1s linear;
+            animation: loader 700ms ease-in;
         }
     }
 }
