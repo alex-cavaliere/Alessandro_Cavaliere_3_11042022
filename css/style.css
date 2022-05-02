@@ -318,9 +318,6 @@ footer h3 {
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    padding-bottom: 4.5rem;
-  }
   header .arrow {
     font-size: xx-large;
   }
