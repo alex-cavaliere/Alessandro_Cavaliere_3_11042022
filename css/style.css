@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../../assets/police/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("../assets/police/roboto/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto-R";
-  src: url("../../assets/police/roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("../assets/police/roboto/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto-S";
-  src: url("../../assets/police/roboto/Roboto-Light.ttf") format("truetype");
+  src: url("../assets/police/roboto/Roboto-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("../../assets/police/shrikhand/Shrikhand-Regular.otf") format("opentype");
+  src: url("../assets/police/shrikhand/Shrikhand-Regular.otf") format("opentype");
 }
 .title {
   font-family: "Shrikhand", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
