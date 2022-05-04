@@ -1,3 +1,4 @@
+// premier keyframe pour le wrapper avec une legere opacité.
 @keyframes loader_time {
     from{
         z-index: 1;
@@ -9,6 +10,7 @@
         opacity: 0.8;
     }
 }
+// deuxieme keyframe pour l'animation du loader.
 @keyframes loader {
     0%{
         opacity: 0;

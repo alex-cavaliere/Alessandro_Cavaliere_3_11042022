@@ -1,3 +1,4 @@
+// affichage page des menu
 
 @keyframes menu_scroll {
     from{
@@ -38,11 +39,8 @@ img{
     & .heart, .heart_full{
         margin-top: -3%;
     }
-    & .heart_full{
-        margin-right: 0.6px;
-    }
     .heart{
-        margin-right: 0.5px;
+        margin-right: 0.2px;
     }
 }
 #menu{
