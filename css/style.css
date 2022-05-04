@@ -429,6 +429,9 @@ img {
 #header_menu .heart, #header_menu .heart_full {
   margin-top: -3%;
 }
+#header_menu .heart_full {
+  right: 7%;
+}
 #header_menu .heart {
   margin-right: 0.2px;
 }
