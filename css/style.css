@@ -302,6 +302,7 @@ footer h3 {
   background: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
 }
 .heart_full:hover {
   scale: 1.05;
