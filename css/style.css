@@ -320,10 +320,6 @@ footer h3 {
   width: 2rem;
 }
 
-.heart_full {
-  right: 6.8%;
-}
-
 @media screen and (min-width: 768px) {
   header .arrow {
     font-size: xx-large;
@@ -429,12 +425,6 @@ img {
 }
 #header_menu .heart, #header_menu .heart_full {
   margin-top: -3%;
-}
-#header_menu .heart_full {
-  right: 7%;
-}
-#header_menu .heart {
-  margin-right: 0.2px;
 }
 
 #menu {
