@@ -12,12 +12,24 @@
     justify-content: center;
     align-items: center;
     background-color: #eae6e6;
-    padding: 2px;
+    padding: 0.8rem;
     box-shadow: inset 0px 3px 6px 0px #cfcccc;
     margin-bottom: 8%;
-
     & .location_dot{
-        text-indent: -1.2rem;
+        text-indent: -0.2rem;
+    }
+    & form > #location{
+        border: none;
+        background-color: hsl(0, 9%, 91%);
+        text-indent: 2rem;
+        font-size: medium;
+        &::placeholder{
+            color: black;
+            opacity: 1;
+        }
+        &:focus{
+            outline: 0;
+        }
     }
 }
 .intro{

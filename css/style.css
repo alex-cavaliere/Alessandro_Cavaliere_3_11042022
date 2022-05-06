@@ -168,12 +168,25 @@ footer h3 {
   justify-content: center;
   align-items: center;
   background-color: #eae6e6;
-  padding: 2px;
+  padding: 0.8rem;
   box-shadow: inset 0px 3px 6px 0px #cfcccc;
   margin-bottom: 8%;
 }
 #logo_caption .location_dot {
-  text-indent: -1.2rem;
+  text-indent: -0.2rem;
+}
+#logo_caption form > #location {
+  border: none;
+  background-color: hsl(0deg, 9%, 91%);
+  text-indent: 2rem;
+  font-size: medium;
+}
+#logo_caption form > #location::placeholder {
+  color: black;
+  opacity: 1;
+}
+#logo_caption form > #location:focus {
+  outline: 0;
 }
 
 .intro {
